@@ -23,6 +23,11 @@
 ## g() - returns the values of the stored matrix
 ## setI(anInverse) - stores the inverse of the matrix
 ## getI() - returns the inverse of the stored matrix
+##
+## SAMPLE USE:
+## myMatrix <- makeCacheMatrix( matrix(1:4,2,2) )
+## myMatrix$set( 2*myMatrix$get() )
+## myMatrix$setinverse( solve( myMatrix$get() ) )
 ####################################################################
 makeCacheMatrix <- function(x = matrix()) {
 	
@@ -63,6 +68,10 @@ makeCacheMatrix <- function(x = matrix()) {
 ## value, retrieve it from the object and return it.  If there isn't
 ## a value for the inverse, solve for it, bind it to the object, and
 ## return it.
+##
+## SAMPLE USE:
+## myMatrixInverse <- cacheSolve( myMatrix )
+## myMatrixInverse == myMatrix$getinverse()
 ####################################################################
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
