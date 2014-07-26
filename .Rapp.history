@@ -1,0 +1,277 @@
+setwd("datasciencecoursera/")
+load(datasets)
+library(datasets)
+data(iris)
+colMeans(iris)
+class(iris)
+str(iris)
+class(iris$Sepal.Length)
+class(iris$Sepal.Length)
+str(iris)
+str(iris)
+head(iris[5])
+head(iris[-5])
+iris
+str(iris)
+head(iris)
+str(rep)
+f1<-gl(1:3,50)
+f1<-gl(c(1,2,3),50)
+str(gl)
+gl(3,10)
+f1<-gl(3,50)
+head(iris)
+mean(iris[100:150,1])
+apply(iris,2,mean)
+apply(iris[,1:4],2,mean)
+library(datasets)
+data(mtcars)
+str(mtcars)
+?mtcars
+apply(mtcars,2,mean)
+str(apply)
+apply(mtcars,dim=2,mean)
+apply(mtcars,1,mean)
+head(mtcars)
+str(mtcars)
+head(mtcars)
+apply(mtcars,2,mean)
+head(mtcars)
+sapply(mtcars,cyl,mean)
+str(split)
+split(mtcars, mtcars$cyl)
+str(with)
+?with
+with(mtcars,tapply(mpg,cyl,mean))
+tapply(mpg,cyl,mean)
+with(mtcars,tapply(cyl,mpg,mean))
+with(mtcars,tapply(mpg,cyl,mean))
+split(mtcars, mtcars$cyl)
+split(mtcars, mtcars$cyl)$4
+split(mtcars, mtcars$cyl)->tmp
+tmp
+tmp$4
+tmp$`4`
+rm(tmp)
+split(mtcars, mtcars$cyl)$`4`->tmp4
+split(mtcars, mtcars$cyl)$`8`->tmp8
+tmp4
+tmp4$hp
+mean(tmp4$hp)
+mean(tmp4$hp)-mean(tmp8$hp)
+mean(tmp8$hp)
+ls()
+debug(ls)
+ls()
+n
+0
+q
+n
+n
+n
+n
+n
+n
+setwd("2-rprogramming/ProgrammingAssignment2/")
+getwd()
+aNewContext<-function(){myMessage<-"Hello World" myMessage}
+aNewContext<-function() {myMessage<-"Hello World" myMessage}
+aNewContext<-function() {myMessage<-"Hello World" myMessage}
+aNewContext<-function() {#
+myMessage <- "Hello World" #
+myMessage#
+}
+aNewContext()
+myMessage
+things<-999
+sing<-function(thing) sprintf("%d beers on the %s!", things, thing)
+sing("wall")
+decreaseThings<-function() things<-things-1
+decreaseThings()
+sing("wall")
+ls
+ls()
+q
+n
+n
+n
+n
+n
+n
+?debug
+undebug(ls)
+ls()
+things
+decreaseThings()
+things
+gall<-gall-1
+decreaseThingsProperly<-function() things<<-things-1
+decreaseThingsProperly()
+sing("wall")
+x<-f
+x<-5
+changeX <- function(newXValue) { x <- newXValue }
+changeX(100)
+x
+reallyChangeX <- function(newXValue) { x <<- newXValue }
+reallyChangeX(100)
+x
+ls()
+rm(list=ls())
+hof <- function(f,x) {}
+hof <- function(f,x) {#
+cat(#
+sprintf"The val of y at x=%s is %s. \n", x, f(x)#
+)#
+}
+hof <- function(f,x) {#
+cat(#
+sprintf()"The val of y at x=%s is %s. \n", x, f(x))#
+)#
+}
+hof <- function(f,x) {#
+cat(#
+sprintf("The val of y at x=%s is %s. \n", x, f(x))#
+)#
+}
+?cat
+cat("otis")
+ls
+ls()
+cat(pi)
+pi
+hof(sin, pi/4)
+myFunction <- function(x) {#
+100*x#
+}
+hof(myFunction,-5)
+hof(function(x) {2*x},10)
+nTimes <- function(n) {#
+function(x) {#
+n*x#
+}#
+}
+nTimes(3)
+x<-5
+nTimes(3)
+threeTimes = nTimes(3)
+threeTimes(5)
+nTimes(4)(5)
+nTimes(4)5
+source("cachematrix.R")
+class("makeVector")
+str("makeVector")
+class(makeVector)
+str(makeVector)
+args(makeVector)
+makeVector$set(3)
+makeVector(3)
+makeVector(3)(5)
+makeVector()$set(5)
+makeVector()$get()
+makeVector()$get(5)
+makeVector()$get(5)
+ls()
+source("cachematrix.R")
+Dog <- function(name="Fido", barkType="Woof!") {#
+noOfBarks<- numeric(1)#
+updateBarkNumber <- function() {#
+noOfBarks <<- sample(1:10,1)#
+}#
+updateBarkNumber()#
+#
+f <- function() {#
+cat(c("YIP!\n", "Grr!\n", "YELP!\n", "Ouch!")[sample(1:4,1)])#
+updateBarkNumber()#
+}#
+#
+g<-function() {#
+for (i in 1:noOfBarks) cat(sprintf("%s ", barkType))#
+}#
+#
+list(name=name, swatWithNewspaper=f, bark=g)#
+}
+fido<-Dog()
+snookums<-Dog(name="Snookums",barkType="Yap!")
+fido$name
+fido$bark()
+snookums$name
+snookums$bark()
+snookums$swatWithNewspaper()
+snookums$swatWithNewspaper()
+str(snookums)
+str(Dog())
+ls()
+str(makeVector())
+v1<-makeVector()
+class(v1)
+str(v1)
+v1$set(5)
+v1
+v1$get()
+v1$setmean(6)
+v1$get()
+v1$getmean()
+v2<-makeVector()
+v2$get()
+v2$getmean()
+mymean<-cachemean()
+mymean<-cachemean(3)
+mymean1<-cachemean(v1)
+str(mymean1)
+v2$set(2)
+mymean2<-cachemean(v2)
+mymean1
+mymean2
+?solve
+x = matrix(c(1,-.25,1,-.25),2,2)
+z
+x
+x = matrix(c(1,-.25,-.25,1),2,2)
+x
+args(sove)
+args(solve)
+solve(x,x)
+sove(x)
+solve(x)
+solve(x) %*% x
+class(x)
+?inverse
+??inverse
+source("cachematrix.R")
+makeCacheMatrix(x)
+makeCacheMatrix(x)->m1
+m1
+m1$get()
+m2<-makeCacheMatrix()
+m2$get()
+m1$getinverse()
+m1$setinverse(solve(m1$get()))
+m1$getinverse()
+m1$get()
+m1$get() %*% m1$getinverse
+m1$get() %*% m1$getinverse()
+source("cachematrix.R")
+source("cachematrix.R")
+x
+m2
+m2$set(x)
+m2$get()
+m2$getinverse()
+m1$getinverse()
+cacheSolve(m1)
+cacheSolve(m2)
+class(m1)
+cacheSolve(m2)
+traceback()
+solve(x)
+source("cachematrix.R")
+cacheSolve(m1)
+source("cachematrix.R")
+cacheSolve(m1)
+cacheSolve(m2)
+cacheSolve(m2)
+class(m1)
+class(m1$getinverse())
+2*x
+q()
